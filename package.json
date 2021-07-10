@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf ./build && tsc",
+    "build": "rimraf ./build && tsc && npm run copy:assets",
     "start:dev": "nodemon",
-    "start": "npm run build && node build/index.js"
+    "start": "npm run build && node build/index.js",
+    "copy:assets": "cp -r static/* build"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <h1>CONTROL <span id=time>00:00:00</span></h1>
+        <table>
+            <tr>
+                <td>
+                    <span class="material-icons" style="font-size: 200;">stars</span>
+                </td>
+                <td><span class="material-icons" style="font-size: 200;">today</span></td>
+                <td><span class="material-icons" style="font-size: 200;">trending_up</span></td>
+                <td><span class="material-icons" style="font-size: 200;">equalizer</span></td>
+                <td><span class="material-icons" style="font-size: 200;">new_releases</span></td>
+            </tr>
+            <tr>
+                <td><span class="material-icons" style="font-size: 200;">developer_board</span></td>
+                <td><span class="material-icons" style="font-size: 200;">memory</span></td>
+                <td><span class="material-icons" style="font-size: 200;">router</span></td>
+                <td><span class="material-icons" style="font-size: 200;">add_a_photo</span></td>
+                <td><span class="material-icons" style="font-size: 200;">new_releases</span></td>
+            </tr>
+            <tr>
+                <td><span class="material-icons" style="font-size: 200;">looks_one</span></td>
+                <td><span class="material-icons" style="font-size: 200;">looks_two</span></td>
+                <td><span class="material-icons" style="font-size: 200;">looks_3</span></td>
+                <td><span class="material-icons" style="font-size: 200;">filter_4</span></td>
+                <td><span class="material-icons" style="font-size: 200;">filter_5</span></td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+<script>
+    var now = new Date();
+    document.getElementById("time").innerHTML = now.toISOString();
+</script>
