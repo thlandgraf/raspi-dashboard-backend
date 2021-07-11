@@ -1,38 +1,56 @@
 <html>
     <head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/control.js"></script>
+        <link rel="stylesheet" href="assets/control.css">
     </head>
     <body>
-        <h1>CONTROL <span id=time>00:00:00</span></h1>
-        <table>
-            <tr>
-                <td>
-                    <span class="material-icons" style="font-size: 200;">stars</span>
-                </td>
-                <td><span class="material-icons" style="font-size: 200;">today</span></td>
-                <td><span class="material-icons" style="font-size: 200;">trending_up</span></td>
-                <td><span class="material-icons" style="font-size: 200;">equalizer</span></td>
-                <td><span class="material-icons" style="font-size: 200;">new_releases</span></td>
-            </tr>
-            <tr>
-                <td><span class="material-icons" style="font-size: 200;">developer_board</span></td>
-                <td><span class="material-icons" style="font-size: 200;">memory</span></td>
-                <td><span class="material-icons" style="font-size: 200;">router</span></td>
-                <td><span class="material-icons" style="font-size: 200;">add_a_photo</span></td>
-                <td><span class="material-icons" style="font-size: 200;">new_releases</span></td>
-            </tr>
-            <tr>
-                <td><span class="material-icons" style="font-size: 200;">looks_one</span></td>
-                <td><span class="material-icons" style="font-size: 200;">looks_two</span></td>
-                <td><span class="material-icons" style="font-size: 200;">looks_3</span></td>
-                <td><span class="material-icons" style="font-size: 200;">filter_4</span></td>
-                <td><span class="material-icons" style="font-size: 200;">filter_5</span></td>
-            </tr>
-        </table>
+        <div class="bg">
+            <h1>DDM Dashboard <span id=time>00:00:00</span></h1>
+            <table class="maincontrol">
+                <tr>
+                    <td id="0-0">
+                        <span class="material-icons" >stars</span>
+                    </td>
+                    <td id="0-1"><span class="material-icons">today</span></td>
+                    <td id="0-2"><span class="material-icons" >trending_up</span></td>
+                    <td id="0-3"><span class="material-icons" >equalizer</span></td>
+                    <td id="0-4"><span class="material-icons" >new_releases</span></td>
+                </tr>
+                <tr>
+                    <td id="1-0"><span class="material-icons" >developer_board</span></td>
+                    <td id="1-1"><span class="material-icons" >memory</span></td>
+                    <td id="1-2"><span class="material-icons" >router</span></td>
+                    <td id="1-3"><span class="material-icons" >add_a_photo</span></td>
+                    <td id="1-4"><span class="material-icons" >new_releases</span></td>
+                </tr>
+                <tr>
+                    <td id="2-0"><span class="material-icons" >looks_one</span></td>
+                    <td id="2-1"><span class="material-icons" >looks_two</span></td>
+                    <td id="2-2"><span class="material-icons" >looks_3</span></td>
+                    <td id="2-3"><span class="material-icons" >filter_4</span></td>
+                    <td id="2-4"><span class="material-icons" >filter_5</span></td>
+                </tr>
+                <tr>
+                    <td id="3-0"><span class="material-icons" >add_a_photo</span></td>
+                    <td id="3-1"></td>
+                    <td id="3-2"></td>
+                    <td id="3-3"></td>
+                    <td id="3-4"><span class="material-icons" >power_settings_new</span></td>
+                </tr>
+                
+            </table>
+            <img class="bxlogo" src="assets/beyonnex-icon.svg" width="50" height="50" >
+        </div>
     </body>
 </html>
 
 <script>
-    var now = new Date();
-    document.getElementById("time").innerHTML = now.toISOString();
+    $(document).ready(function(){
+        dc.init();
+    });
 </script>

@@ -1,0 +1,35 @@
+html, body, .bg
+{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    vertical-align: center;
+    font-size: 32;
+}
+
+.maincontrol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.maincontrol td .material-icons {
+    font-size: 200;
+    color: darkslategrey
+}
+
+.hilit .material-icons {
+    font-size: 250 !important;
+    color: brown !important;
+}
+
+.bxlogo {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 20px;
+}
+

@@ -5,8 +5,10 @@ console.log('Starting up Dashboard Backend')
 const app = express()
 const port = 3000
 
-app.get('/api', (req, res) => {
+app.get('/api/clicked', (req, res) => {
   res.send('Hello World!')
+
+  console.log(`r=${req.query.r},c=${req.query.c}`)
 })
 
 app.use('/', express.static('static'));
